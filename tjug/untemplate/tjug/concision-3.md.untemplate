@@ -2,15 +2,15 @@
 
 ```scala
 def isPrime( n : Int ) =
-  (2 to math.ceil(math.sqrt(n)).toInt).exists( n % _ == 0 )
+  !(2 to math.floor(math.sqrt(n)).toInt).exists( n % _ == 0 )
 ```
 
 or, perhaps more readably...
 
 ```scala
 def isPrime( n : Int ) =
-  val max = math.ceil(math.sqrt(n)).toInt
-  (2 to max).exists( n % _ == 0 )
+  val max = math.floor(math.sqrt(n)).toInt
+  !(2 to max).exists( n % _ == 0 )
 ```
 
 <span class="aftercomment">I am using Scala 3 syntax!</span>

@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 public final class Primes {
   public static boolean isPrime(int n) {
-    var max = (int) Math.ceil(Math.sqrt(n));
+    var max = (int) Math.floor(Math.sqrt(n));
     return !IntStream.rangeClosed( 2, max )
                      .anyMatch(check -> n % check == 0 );
   }

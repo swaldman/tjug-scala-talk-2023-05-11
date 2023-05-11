@@ -4,7 +4,7 @@
 public final class Primes {
   public static boolean isPrime(int n) {
     var isPrime = true;
-    var max = (int) Math.ceil(Math.sqrt(n));
+    var max = (int) Math.floor(Math.sqrt(n));
     for (int i = 2; i <= max; ++i) {
       if (n % i == 0) {
         isPrime = false;
