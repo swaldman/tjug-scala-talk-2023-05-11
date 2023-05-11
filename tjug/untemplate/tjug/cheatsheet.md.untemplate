@@ -7,7 +7,7 @@
   - understand the tricky double colon for Scala libs!
 * [PDFBox](https://pdfbox.apache.org/) Hello World to steal
   - [`https://pdfbox.apache.org/1.8/cookbook/documentcreation.html`](https://pdfbox.apache.org/1.8/cookbook/documentcreation.html)
-* [requests](https://github.com/com-lihaoyi/requests-scala) breadcrmbs
+* [requests](https://github.com/com-lihaoyi/requests-scala) breadcrumbs
   - `request.get(...).text`
 * [upickle](https://github.com/com-lihaoyi/upickle) breadcrumbs
   - `upickle.default.{ReadWriter, read}`
