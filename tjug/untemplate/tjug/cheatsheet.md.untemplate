@@ -1,0 +1,15 @@
+# Demos &mdash; cheatsheet
+
+* Library [coordinates](https://central.sonatype.com/)
+  - `org.apache.pdfbox:pdfbox:2.0.28` &larr; Java
+  - `com.lihaoyi::upickle:3.1.0` &larr; Scala 
+  - `com.lihaoyi::requests:0.8.0` &larr; Scala
+  - understand the tricky double colon for Scala libs!
+* [PDFBox](https://pdfbox.apache.org/) Hello World to steal
+  - [`https://pdfbox.apache.org/1.8/cookbook/documentcreation.html`](https://pdfbox.apache.org/1.8/cookbook/documentcreation.html)
+* [requests](https://github.com/com-lihaoyi/requests-scala) breadcrmbs
+  - `request.get(...).text`
+* [upickle](https://github.com/com-lihaoyi/upickle) breadcrumbs
+  - `upickle.default.{ReadWriter, read}`
+* [PoetryDB API](https://github.com/thundercomb/poetrydb) random poem endpoint
+  - `https://poetrydb.org/random`

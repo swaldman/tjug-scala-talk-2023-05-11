@@ -1,0 +1,19 @@
+val randomWords =
+  val tmp = scala.util.Random.shuffle(TjugSite.WordSalad.words)
+  val raggedFirstWord = tmp.head.drop((math.random() * tmp.head.length).toInt)
+  raggedFirstWord +: tmp.tail ++: tmp
+val coloredWords : immutable.Seq[String] =
+  randomWords.map { phrase => // really these are phrases...
+    val color = TjugSite.WordSalad.randomCssColor()
+    s"""<span style="color: ${color}">${phrase}</span>"""
+  }
+end coloredWords  
+()[]~()>
+<div id="word-salad-overlay">
+Word<br/>
+Salad
+</div>
+<div id="word-salad-words">
+  <( coloredWords.mkString(" &bull; ") )>
+</div>
+

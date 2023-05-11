@@ -1,0 +1,18 @@
+# Simplicity
+
+[Li Haoyi](https://www.lihaoyi.com/) writes beautiful libraries that emphasize simplicity.
+Some examples I enjoy include
+
+* [os-lib](https://github.com/com-lihaoyi/os-lib) for simple file-system and process handling
+* [requests-scala](https://github.com/com-lihaoyi/requests-scala), a simple blocking HTTP client
+* [upickle](https://github.com/com-lihaoyi/upickle), simple typesafe JSON processing
+* [utest](https://github.com/com-lihaoyi/utest), beautifully concise testing
+* [cask](https://github.com/com-lihaoyi/cask), HTTP services without ceremony
+
+Check out all of his libraries [here](https://github.com/orgs/com-lihaoyi/repositories).
+
+Haoyi is also the author of the [mill](https://github.com/com-lihaoyi/mill) build tool, which like all build tools in Scala
+is a Swiss Army knife with which you do much more than build.
+
+Haoyi's book [_Hands-On Scala Programming_](https://www.goodreads.com/en/book/show/53836488)
+is a great introduction for programmers interested in getting stuff done fast.

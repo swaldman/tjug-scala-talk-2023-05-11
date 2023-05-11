@@ -1,0 +1,8 @@
+# Simplicity
+
+* Scala's best kept secret is how beautifully you can accomplish simple things very
+  simply, while getting all the benefits of strong type safety.
+
+* Scala's built-in
+  [collections](https://docs.scala-lang.org/overviews/collections-2.13/introduction.html) [library](https://docs.scala-lang.org/scala3/book/introduction.html)
+  is a superpower.

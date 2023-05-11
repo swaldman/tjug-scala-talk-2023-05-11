@@ -1,0 +1,12 @@
+# scala-cli
+
+* supports **Java** code _as well and easily_ as **Scala** code!
+
+  - On the Java side, `jbang` is the closest competition, but `scala-cli` is in some respects easier to use, more
+    "batteries included"
+  - and of course, `scala-cli` supports Scala too
+
+* Consider prototyping your Java projects with `scala-cli`
+
+  - [https://scala-cli.virtuslab.org/](https://scala-cli.virtuslab.org/)
+  - maybe mix in a bit of Scala!

@@ -1,0 +1,15 @@
+# Demos
+
+1. `HelloWorld.java` in `scala-cli`
+   - output to native
+2. `HelloPDF.java` in `scala-cli`
+   - let's use [Apache PDFBox](https://pdfbox.apache.org/), dependency resolution is so easy!
+   - output to JVM-dependent package
+3. `HelloWorld.scala`
+   - cool regex handling
+4. `poemalyzer`
+   - hit a JSON API with [requests-scala](https://github.com/com-lihaoyi/requests-scala) to grab a random poem
+   - deserialize result to `case class` with [upickle](https://github.com/com-lihaoyi/upickle)
+   - build a sorted word frequency table with Scala's [Collections API](https://docs.scala-lang.org/scala3/book/introduction.html)
+   - print a nice report
+

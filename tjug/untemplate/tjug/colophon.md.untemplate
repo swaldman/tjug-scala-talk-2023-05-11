@@ -1,0 +1,23 @@
+# Colophon
+
+<span class="heavy">Tools</span>
+* [reveal.js](https://revealjs.com/) &mdash; web presentation library
+* [unstatic](https://github.com/swaldman/unstatic) &mdash; Scala static-site generator
+* [untemplate](https://github.com/swaldman/untemplate-doc) &mdash; Scala templating library
+
+<span class="heavy">Images</span>
+* Cover image, weird server farm &mdash; _Midjourney_
+* Over-under sunny ocean split shot &mdash; _Bing Image Generator_
+* Goofy Superhero &mdash; _Bing Image Generator_
+* Steampunk mad scientist's lab &mdash; _Bing Image Generator_
+* Headshots of Martin Odersky and Li Hayoi scraped from online profile pics
+
+<spam class="heavy">Fonts</span>
+* [Raleway](https://fonts.google.com/specimen/Raleway)
+* [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
+
+<div id="this-prez">
+
+_You can find the build of this presentation [here](https://github.com/swaldman/tjug-scala-talk-2023-05-11)._
+
+</div>

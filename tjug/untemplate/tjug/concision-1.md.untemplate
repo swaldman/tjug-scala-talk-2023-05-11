@@ -1,0 +1,12 @@
+# Concision
+
+Scala
+
+* encourages programmers to express themselves **cleanly and concisely**
+  with very little boilerplate.
+
+* successfully blends multiple programming-language paradigms (**functional**, **object-oriented**),
+  enabling whichever style best models a particular problem or domain.
+
+* combines **flexible syntax** with extraordinary **type safety**, enabling construction of "dialects" that function as domain-specific languages.
+  

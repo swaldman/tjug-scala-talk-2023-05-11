@@ -1,0 +1,31 @@
+# Abstraction
+
+e.g. "tagless final" style &mdash; _very optional! love it or hate it!_
+
+```scala
+// from Practical FP in Scala, 2nd Ed, by Gabriel Volpe (2021)
+final case class Checkout[F[_]: Background: Logger: MonadThrow: Retry](
+    payments: PaymentClient[F],
+    cart:     ShoppingCart[F],
+    orders:   Orders[F],
+    policy:   RetryPolicy[F]
+){
+  def process(userId: UserId, card: Card): F[OrderId] =
+    cart.get(userId).flatMap {
+      case CartTotal(items, total)  =>
+        for {
+          its <- ensureNonEmpty(items)
+          pid <- processPayment(Payment(userId, total, card))
+          oid <- createOrder(userId, pid, its, total)
+          _   <- cart.delete(userId).attempt.void
+        } yield oid
+     }
+  def processPayment(in: Payment): F[PaymentId] =
+    Retry[F] // calls no-arg apply methods of Retry, finds implicit instance
+      .retry(policy, Retriable.Payments)(payments.process(in))
+      .adaptError {
+        case e => PaymentError( Option(e.getMessage).getOrElse("Unknown") )
+      }
+  // ...
+}
+```

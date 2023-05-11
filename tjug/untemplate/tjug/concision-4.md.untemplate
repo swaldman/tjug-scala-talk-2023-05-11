@@ -1,0 +1,15 @@
+# Concision &mdash; Primes in Java, functional style
+
+```java
+import java.util.stream.IntStream;
+
+public final class Primes {
+  public static boolean isPrime(int n) {
+    var max = (int) Math.ceil(Math.sqrt(n));
+    return !IntStream.rangeClosed( 2, max )
+                     .anyMatch(check -> n % check == 0 );
+  }
+}
+```
+
+<span class="aftercomment">Pretty close!</span>

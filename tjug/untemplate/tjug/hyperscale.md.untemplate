@@ -1,0 +1,14 @@
+# Hyperscale
+
+The Scala ecosystem includes libraries for building concurrent, resilient, incredibly scalable services
+based on transformable "functional effects".
+
+* [ZIO](https://zio.dev/)
+* [Cats effects](https://typelevel.org/cats-effect/) / [FS2](https://fs2.io/)
+
+See also [Tapir](https://tapir.softwaremill.com/en/latest/), an infrastructure agnostic endpont definition library.
+
+---
+
+_These are libraries are challenging. End up here, but don't start your Scala journey with these tools,
+unless you are working with a team to mentor you._

@@ -1,0 +1,21 @@
+# Safety
+
+Elsewhere...
+
+```scala
+opaque type Email = String
+
+class BadEmail(msg: String, cause: Throwable = null) extends Exception(msg, cause)
+
+// modified from https://www.regular-expressions.info/email.html 
+val EmailRegex = """(?i)^\s*([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,})\s*$""".r
+
+def toEmail(s: String): Email =
+  s match {
+    case EmailRegex(trimmed) => trimmed
+    case _                   => throw new BadEmail(s)
+  }
+
+// toString() will give us back our String
+```
+<span class="aftercomment">No boxing or runtime overhead! One-line custom Exception!</span>

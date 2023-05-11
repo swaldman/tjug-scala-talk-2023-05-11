@@ -1,0 +1,13 @@
+# scala-cli
+
+* a shell command, **minimal-config build tool** in the style of golang's multifarious `go` command.
+
+* will soon become the default `scala` command
+  - replaces existing command modeled on the `java` command
+
+* supports **compiling**, **running**, **packaging**, and **publishing** libraries and applications, and running a **REPL**
+
+* supports `graalvm` native image generation
+
+* supports **scripting in Scala**
+  - `#!/usr/bin/env -S scala-cli shebang`

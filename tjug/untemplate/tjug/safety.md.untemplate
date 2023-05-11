@@ -1,0 +1,16 @@
+# Safety
+
+```scala
+def sendmail(to: String, subject: String, text: String)  = ???
+```
+
+Yuck. 🤮
+
+Enforce everything you know at compile-time!
+
+```scala
+def sendmail(to: Email, subject: String, text: String)  = ???
+```
+
+<span class="aftercomment">The `???` function is a wonderful convenience!</span>
+

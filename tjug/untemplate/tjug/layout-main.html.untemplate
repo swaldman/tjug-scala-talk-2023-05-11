@@ -1,0 +1,247 @@
+import tjug.TjugSite
+
+import unstatic.PageBase
+
+val site = input.renderLocation.site
+
+val distLoc   = site.location("/dist")
+val pluginLoc =  site.location("/plugin")
+val imageLoc =  site.location("/image")
+
+val title = input.mbTitle.getOrElse("tjug")
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : TjugSite.MainLayoutInput)[]~()>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title><( title )></title>
+
+    <link rel="stylesheet" href="<( distLoc.relative )>/reset.css">
+    <link rel="stylesheet" href="<( distLoc.relative )>/reveal.css">
+    <link rel="stylesheet" href="<( distLoc.relative )>/theme/tjug.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="<( pluginLoc.relative )>/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <div id="test-pattern">
+            Please make your browser big and wide (landscape-ish).
+            No effort has been made to make this presentation reactive for small screens.
+          </div>
+        </section>
+        <section>
+          <div id="cover-slide">
+            <div class="left-image">
+            </div>
+            <div class="slide-text">
+              <( TjugSite.Markdown.coverPageHtml )>
+            </div>
+          </div>    
+        </section>
+        <section>
+          <div class="boundary-slide">
+            <div class="slide-text">
+              <h1>Preliminaries</h1>
+            </div>
+           </div>
+        </section>
+        <section>
+          <div id="underwater-exponential-1" class="underwater-exponential">
+            <img src="<( imageLoc.relative )>/underwater-exponential-1.svg" />
+          </div>
+        </section>
+        <section>
+          <div id="underwater-exponential-2" class="underwater-exponential">
+            <img src="<( imageLoc.relative )>/underwater-exponential-2.svg" />
+          </div>
+        </section>
+        <section>
+          <div id="scala-as-bleeding-edge-java" class="slide-text">
+              <( TjugSite.Markdown.bleedingEdgeJavaHtml )>
+          </div>
+        </section>
+        <section>
+          <div id="scala-as-bleeding-edge-java-2">
+            <div class="slide-text">
+              <( TjugSite.Markdown.bleedingEdgeJava2Html )>
+            </div>
+            <div id="odersky-pic">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="boundary-slide">
+            <div class="slide-text">
+              <h1>Why Scala?</h1>
+            </div>
+           </div>
+        </section>
+        <section>
+          <div id="concision-1" class="slide-text">
+              <( TjugSite.Markdown.concision1Html )>
+          </div>
+        </section>
+        <section>
+          <div id="concision-2" class="slide-text">
+              <( TjugSite.Markdown.concision2Html )>
+          </div>
+        </section>
+        <section>
+          <div id="concision-3" class="slide-text">
+              <( TjugSite.Markdown.concision3Html )>
+          </div>
+        </section>
+        <section>
+          <div id="concision-4" class="slide-text">
+              <( TjugSite.Markdown.concision4Html )>
+          </div>
+        </section>
+        <section>
+          <div id="safety" class="slide-text">
+              <( TjugSite.Markdown.safetyHtml )>
+          </div>
+        </section>
+        <section>
+          <div id="safety-2" class="slide-text tighter">
+              <( TjugSite.Markdown.safety2Html )>
+          </div>
+        </section>
+        <section>
+          <div id="abstraction" class="slide-text">
+              <( TjugSite.Markdown.abstractionHtml )>
+          </div>
+        </section>
+        <section>
+          <div id="hyperscale" class="slide-text">
+              <( TjugSite.Markdown.hyperscaleHtml )>
+          </div>
+        </section>
+        <section>
+          <div id="simplicity" class="slide-text">
+              <( TjugSite.Markdown.simplicityHtml )>
+              <div style="width: 100%; text-align: center;">
+                <img src="<( imageLoc.relative )>/goofy-superhero-transparent_fdb1e3ef-54ae-494a-bc16-fbfbe2f58ccf.png" height="300" />
+              </div>    
+          </div>
+        </section>
+        <section>
+          <div id="simplicity-2">
+            <div id="lihaoyi-pic">
+            </div>
+            <div class="slide-text">
+              <( TjugSite.Markdown.simplicity2Html )>
+            </div>              
+          </div>
+        </section>
+        <section>
+          <div id="compatible" class="slide-text tighter">
+              <( TjugSite.Markdown.compatibleHtml )>
+          </div>
+          <div id="logos">
+            <img id="java-logo" src="<( imageLoc )>/logo/java-runtime-environment-computer-icons-java-platform-standard-edition-java-42921b98669dba6c6a5ac0b7d81f4164.png" width="300" />
+            <img id="kotlin-logo" src="<( imageLoc )>/logo/kotlin-1-logo-svg-vector.svg" width="200" />
+            <img id="clojure-logo" src="<( imageLoc )>/logo/Clojure_logo.svg" width="200" />
+            <img id="scala-logo" src="<( imageLoc )>/logo/scala-spiral.png" width="140" />
+          </div>
+        </section>
+        <section>
+          <div id="interesting">
+            <div class="slide-text">
+              <( TjugSite.Markdown.interestingHtml )>
+            </div>
+            <div id="mad-scientists-lab">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="word-salad">
+            <( TjugSite.WordSalad.html )>
+          </div>
+        </section>
+        <section>
+          <div class="boundary-slide">
+            <div class="slide-text">
+              <h1>scala-cli for Java programmers</h1>
+            </div>
+           </div>
+        </section>
+        <section>
+          <div id="scala-cli-1" class="slide-text tighter">
+              <( TjugSite.Markdown.scalaCli1Html )>
+          </div>
+        </section>
+        <section>
+          <div id="scala-cli-2" class="slide-text">
+              <( TjugSite.Markdown.scalaCli2Html )>
+          </div>
+        </section>
+        <section>
+          <div class="boundary-slide">
+            <div class="slide-text">
+              <h1>Demos</h1>
+            </div>
+           </div>
+        </section>
+        <section>
+          <div id="demos" class="slide-text demostuff">
+              <( TjugSite.Markdown.demosHtml )>
+          </div>
+        </section>
+        <section>
+          <div id="cheatsheet" class="slide-text demostuff">
+              <( TjugSite.Markdown.cheatsheetHtml )>
+          </div>
+        </section>
+        <section>
+          <div class="boundary-slide">
+            <div class="slide-text">
+              <h1>Epilogue</h1>
+            </div>
+           </div>
+        </section>
+        <section>
+          <div id="learn-scala" class="slide-text tighter">
+              <( TjugSite.Markdown.learnScalaHtml )>
+          </div>
+        </section>
+        <section>
+          <div class="boundary-slide">
+            <div class="slide-text">
+              <h1>Thank You!</h1>
+            </div>
+           </div>
+        </section>
+        <section>
+          <div id="colophon" class="slide-text tighter">
+              <( TjugSite.Markdown.colophonHtml )>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="<( distLoc.relative )>/reveal.js"></script>
+    <!-- <script src="<( pluginLoc.relative )>/notes/notes.js"></script> -->
+    <script src="<( pluginLoc.relative )>/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+          hash: true,
+
+          disableLayout: true, // see https://revealjs.com/presentation-size/
+
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [ RevealHighlight /*, RevealNotes */ ]
+      });
+    </script>
+  </body>
+</html>

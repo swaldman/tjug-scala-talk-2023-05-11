@@ -1,0 +1,15 @@
+# Scala as bleeding-edge Java
+
+
+| Scala Feature              | Eventual Java Feature           |
+|----------------------------|---------------------------------|
+| lambdas, `map(...)`, etc.  | lambdas, `map(...)`, etc.       |
+| `scala.Option`             | `java.lang.Optional`            |
+| `case class`               | `record`                        |
+| pattern matching           | enhanced `switch`               |
+| `sealed` classes and traits| `sealed` classes and interfaces |
+| ubiquitous type inference  | inferred `var` type             |
+| concurrency via `Future`   | concurrency via `Future`        |
+| concrete `trait` methods   | `default` methods of `interface`|
+| `_` for unnamed variables  | `_` for unnamed variables       |
+

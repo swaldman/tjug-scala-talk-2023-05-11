@@ -1,0 +1,5 @@
+# Compatible
+
+* The **full range of Java libraries** is accessible from Scala code
+
+* You can **write Java-compatible facades** to make your Scala libs available to Java and other JVM language clients.
