@@ -8,7 +8,7 @@
 * [PDFBox](https://pdfbox.apache.org/) Hello World to steal
   - [`https://pdfbox.apache.org/1.8/cookbook/documentcreation.html`](https://pdfbox.apache.org/1.8/cookbook/documentcreation.html)
 * [requests](https://github.com/com-lihaoyi/requests-scala) breadcrumbs
-  - `request.get(...).text`
+  - `requests.get(...).text()`
 * [upickle](https://github.com/com-lihaoyi/upickle) breadcrumbs
   - `upickle.default.{ReadWriter, read}`
 * [PoetryDB API](https://github.com/thundercomb/poetrydb) random poem endpoint
